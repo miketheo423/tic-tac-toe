@@ -32,10 +32,9 @@ var turns = 0;
 
 $('#gameBoard tbody').on('click', 'td', function(){
 	if(turns % 2===0){
-		$(this).text("X").addClass('x').addClass('disable');
+		$(this).text("X").addClass('x');
 	} else {
-		$(this).text("O").addClass('o').addClass('disable');
-		console.log(this);
+		$(this).text("O").addClass('o');
 	}
 
 	turns++;
@@ -45,10 +44,6 @@ $('#gameBoard tbody').on('click', 'td', function(){
 	}
 
 	if(cell1.hasClass('x') && cell2.hasClass('x') && cell3.hasClass('x') ||
-		cell1.hasClass('x') && cell2.hasClass('x') && cell3.hasClass('x') ||
-		cell1.hasClass('x') && cell2.hasClass('x') && cell3.hasClass('x') ||
-		cell1.hasClass('x') && cell2.hasClass('x') && cell3.hasClass('x') ||
-		cell1.hasClass('x') && cell2.hasClass('x') && cell3.hasClass('x') ||
 		cell4.hasClass('x') && cell5.hasClass('x') && cell6.hasClass('x') ||
 		cell7.hasClass('x') && cell8.hasClass('x') && cell9.hasClass('x') ||
 		cell1.hasClass('x') && cell5.hasClass('x') && cell9.hasClass('x') ||
@@ -61,10 +56,6 @@ $('#gameBoard tbody').on('click', 'td', function(){
 	}
 
 	if(cell1.hasClass('o') && cell2.hasClass('o') && cell3.hasClass('o') ||
-		cell1.hasClass('o') && cell2.hasClass('o') && cell3.hasClass('o') ||
-		cell1.hasClass('o') && cell2.hasClass('o') && cell3.hasClass('o') ||
-		cell1.hasClass('o') && cell2.hasClass('o') && cell3.hasClass('o') ||
-		cell1.hasClass('o') && cell2.hasClass('o') && cell3.hasClass('o') ||
 		cell4.hasClass('o') && cell5.hasClass('o') && cell6.hasClass('o') ||
 		cell7.hasClass('o') && cell8.hasClass('o') && cell9.hasClass('o') ||
 		cell1.hasClass('o') && cell5.hasClass('o') && cell9.hasClass('o') ||
