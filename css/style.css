@@ -1,0 +1,36 @@
+html, body {
+	text-align: center;
+	background-color: black;
+}
+
+h1 {
+	font-family: 'NemoyMedium'; 
+	font-weight: bold;
+	color: white;
+	font-size:100px;
+}
+#gameBoard {
+	max-width: 650px;
+	max-height: 650px;
+	display: inline-block;
+	background-color: #01FF70;
+	padding: 30px;
+	border-radius: 20px;
+}
+
+table {
+	align-self: center;
+}
+
+.box {
+	height: 150px;
+	width: 150px;
+	background-color: #7FDBFF;
+	margin: 20px;
+	display: inline-block;
+	border-radius: 15px;
+	border: 3px solid black;
+	font-size: 130px;
+	text-align: center;
+
+}

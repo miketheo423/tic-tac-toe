@@ -1,0 +1,33 @@
+// Build game board
+	-Board should probably be built using the table tag in HTML. 
+	-Have the main table then 3 rows
+	-Each row should have 3 cells for a total of 9 cells
+	-Each cell will be individually ID'd
+
+
+
+
+
+//JS Logic
+
+
+	-Game Will Know Which user is currently up
+		-Depending on which user is up, click function will either place an X or an O
+
+
+	Use a Loop function that goes up to 9 to determine if the game is over or not. At the end of the loop, if the board values match a certain mathematical combination, a message will display if P1 or P2 has won, or else it will say it was a tie
+
+//
+
+
+
+
+
+
+
+//Check to see if the player array
+
+is player one choices = [6, 1, 2, 3] 
+
+
+Using JQuery to get the data attribute
