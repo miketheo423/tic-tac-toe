@@ -28,23 +28,51 @@ var cell9 = $('#cell9');
 
 
 
-
 var turns = 0;
-
 
 $('#gameBoard tbody').on('click', 'td', function(){
 	if(turns % 2===0){
-		$(this).text("X").addClass('x');
-	console.log(this);
+		$(this).text("X").addClass('x').addClass('disable');
 	} else {
-		$(this).text("O");
-	console.log(this);
+		$(this).text("O").addClass('o').addClass('disable');
+		console.log(this);
 	}
 
 	turns++;
-	console.log(turns);
 	if (turns > 8){
-		alert("Game Over!");
+		alert("Its a tie!");
+		location.reload();
+	}
+
+	if(cell1.hasClass('x') && cell2.hasClass('x') && cell3.hasClass('x') ||
+		cell1.hasClass('x') && cell2.hasClass('x') && cell3.hasClass('x') ||
+		cell1.hasClass('x') && cell2.hasClass('x') && cell3.hasClass('x') ||
+		cell1.hasClass('x') && cell2.hasClass('x') && cell3.hasClass('x') ||
+		cell1.hasClass('x') && cell2.hasClass('x') && cell3.hasClass('x') ||
+		cell4.hasClass('x') && cell5.hasClass('x') && cell6.hasClass('x') ||
+		cell7.hasClass('x') && cell8.hasClass('x') && cell9.hasClass('x') ||
+		cell1.hasClass('x') && cell5.hasClass('x') && cell9.hasClass('x') ||
+		cell7.hasClass('x') && cell5.hasClass('x') && cell3.hasClass('x') ||
+		cell1.hasClass('x') && cell4.hasClass('x') && cell7.hasClass('x') ||
+		cell2.hasClass('x') && cell6.hasClass('x') && cell8.hasClass('x') ||
+		cell3.hasClass('x') && cell6.hasClass('x') && cell9.hasClass('x')) {
+		alert("Player X Has Won!");
+		location.reload();
+	}
+
+	if(cell1.hasClass('o') && cell2.hasClass('o') && cell3.hasClass('o') ||
+		cell1.hasClass('o') && cell2.hasClass('o') && cell3.hasClass('o') ||
+		cell1.hasClass('o') && cell2.hasClass('o') && cell3.hasClass('o') ||
+		cell1.hasClass('o') && cell2.hasClass('o') && cell3.hasClass('o') ||
+		cell1.hasClass('o') && cell2.hasClass('o') && cell3.hasClass('o') ||
+		cell4.hasClass('o') && cell5.hasClass('o') && cell6.hasClass('o') ||
+		cell7.hasClass('o') && cell8.hasClass('o') && cell9.hasClass('o') ||
+		cell1.hasClass('o') && cell5.hasClass('o') && cell9.hasClass('o') ||
+		cell7.hasClass('o') && cell5.hasClass('o') && cell3.hasClass('o') ||
+		cell1.hasClass('o') && cell4.hasClass('o') && cell7.hasClass('o') ||
+		cell2.hasClass('o') && cell6.hasClass('o') && cell8.hasClass('o') ||
+		cell3.hasClass('o') && cell6.hasClass('o') && cell9.hasClass('o')) {
+		alert("Player O Has Won!");
 		location.reload();
 	}
 

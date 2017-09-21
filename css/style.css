@@ -7,7 +7,7 @@ h1 {
 	font-family: 'NemoyMedium'; 
 	font-weight: bold;
 	color: white;
-	font-size:100px;
+	font-size:80px;
 }
 #gameBoard {
 	max-width: 650px;
@@ -23,14 +23,23 @@ table {
 }
 
 .box {
-	height: 150px;
-	width: 150px;
+	height: 130px;
+	width: 130px;
 	background-color: #7FDBFF;
 	margin: 20px;
 	display: inline-block;
 	border-radius: 15px;
 	border: 3px solid black;
-	font-size: 130px;
+	font-size: 110px;
 	text-align: center;
+}
 
+.box:hover {
+	-webkit-transform: rotateY(180deg);
+		-moz-transform: rotateY(180deg);   
+		transform: rotateY(180deg);
+}
+
+td {
+	color: red;
 }
