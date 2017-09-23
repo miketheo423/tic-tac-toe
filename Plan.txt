@@ -20,14 +20,20 @@
 //
 
 
+//Build a constructor function that creates winning scenario objects
+
+	function xWinner(cell.hasClass('x'), cell.hasClass('x'), cell.hasClass('x')) {
+		this.class = class;
+	}
+
+
+What is a winning scenario object?
+
+	xHasWon1 = {
+		cell1: class of X
+		cell2: class of X
+		cell3: class of X
+	} 
 
 
 
-
-
-//Check to see if the player array
-
-is player one choices = [6, 1, 2, 3] 
-
-
-Using JQuery to get the data attribute
